@@ -1,0 +1,68 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#222222"
+    android:padding="16dp">
+
+    <!-- Section des Feux de Circulation -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <View
+            android:id="@+id/redLight"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/circle_red_off"
+            android:layout_marginBottom="16dp" />
+
+        <View
+            android:id="@+id/yellowLight"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/circle_yellow_off"
+            android:layout_marginBottom="16dp" />
+
+        <View
+            android:id="@+id/greenLight"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/circle_green_off" />
+    </LinearLayout>
+
+    <!-- Affichage de la minuterie -->
+
+
+    <!-- Section des Boutons -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/scenario1Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" le jour"
+            android:paddingHorizontal="16dp"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/scenario2Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="la nuit"
+            android:paddingHorizontal="16dp"
+            android:layout_marginStart="16dp"
+            android:backgroundTint="#FFC107"
+            android:textColor="#000000" />
+    </LinearLayout>
+</LinearLayout>
